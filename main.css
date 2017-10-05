@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+	border:none;
+}
+header,section,footer{
+	min-width: 1200px;
+	position: relative;
+}
+header{
+	display: block;
+	z-index: 10;
+	background: white;
+	height: 72px;
+	box-shadow: 0 0px 200px 60px rgba(152,49,218,0.2);  
+	/*	阴影很重要！*/
+}
+section{
+	z-index: 1;
+	height: 400px;
+}
+body>section:nth-of-type(2n+1){
+	background-color: white;
+	box-shadow: 0 2px 8px 0 rgba(7,17,27,.06);
+}
+body>section:nth-of-type(2n){
+	background-color: #f8fafc;
+	box-shadow: 0 2px 4px 0 rgba(7,17,27,.06) inset;
+}
