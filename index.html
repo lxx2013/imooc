@@ -4,14 +4,14 @@
 <head lang="en">
 	<meta charset="utf-8">
 	<title>慕课网-页面重构</title>
-	<link rel="stylesheet" href="main.css">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
 	<meta name="viewport" content="height=device-height,
 					 width=device-width,
 					 initial-scale=1.0,
 					 minimum-scale=1.0,
 					 maximum-scale=1.0,
-					 user-scalable=no" />
+					 user-scalable=yes" />
 </head>
 
 <body>
@@ -22,64 +22,148 @@
 		</div>
 		<ul id="header-list">
 			<li>
-				<a href="/course/list" target="_self">课程</a>
+				<a href="#" target="_self">课程</a>
 			</li>
-			<li><a href="http://class.imooc.com" class="program-nav " target="_self">职业路径</a></li>
+			<li><a href="#" class="program-nav " target="_self">职业路径</a></li>
 			<li>
-				<a href="http://coding.imooc.com" target="_self">实战</a>
+				<a href="#" target="_self">实战</a>
 			</li>
-			<li><a href="/wenda" target="_self">猿问</a></li>
-			<li><a href="/article" target="_self">手记</a></li>
+			<li><a href="#" target="_self">猿问</a></li>
+			<li><a href="#" target="_self">手记</a></li>
 		</ul>
 		<div id='search-box'>
 			<input type="search" />
 			<div id='search-tags'>
-				<a href="http://class.imooc.com/sc/20" target="_blank">前端入门</a>
-				<a href="http://class.imooc.com/sc/18" target="_blank">Java入门</a>
+				<a href="#" target="_blank">前端入门</a>
+				<a href="#" target="_blank">Java入门</a>
 			</div>
 			<span></span>
 		</div>
 		<ul id="login-area">
 			<li id="app-load">
-				<a>下载APP
-				</a>
+				<a>下载APP</a>
 				<div>
 					<img src="img/app-load.png">
 				</div>
 			</li>
-			<li id="shop-card"><a href=""><span></span>购物车</a></li>
+			<li id="shop-card"><a href="#"><span></span>购物车</a>
+				<div></div>
+			</li>
 			<li class="clearfix"><a>登陆</a>/<a>注册</a></li>
 		</ul>
 	</header>
 	<!--焦点图轮播部分-->
-	<section></section>
+	<section id="Jiaodian">
+		<div class="banner-top" style="background: url(http://img.imooc.com/59c9fd200001c22509360316.jpg) ;z-index:-1;"></div>
+		<div class="banner">
+			<div class="menu-left">
+				<a href="#" target="_blank">前端开发<img style="top:-12px" src="img/menu-left-1.png" alt=""></a>
+				<a href="#" target="_blank">后端开发<img style="top:-72px" src="img/menu-left-2.png" alt=""></a>
+				<a href="#" target="_blank">移动开发<img style="top:-132px" src="img/menu-left-3.png" alt=""></a>
+				<a href="#" target="_blank">数据库<img style="top:-192px" src="img/menu-left-4.png" alt=""></a>
+				<a href="#" target="_blank">云计算&amp;大数据<img style="top:-252px" src="img/menu-left-5.png" alt=""></a>
+				<a href="#" target="_blank">运维&amp;测试<img style="top:-312px" src="img/menu-left-6.png" alt=""></a>
+				<a href="#" target="_blank">UI设计<img style="top:-372px" src="img/menu-left-7.png" alt=""></a>
+			</div>
+			<div class="menu-right">
+				<a target="_blank" href="#" data-track="banner-1-6" class="click-help">
+						<div class="banner-slide slide-active" data-url="http://img.imooc.com/59c9fd200001c22509360316.jpg" style="display: block;">
+							<img src="http://img.imooc.com/59c9fd200001c22509360316.jpg">
+						</div>
+				</a>
+			</div>
+			<div class="menu-bottom">
+				<a href="#" target="_blank" data-track="ljtj-1-1">
+                	<i class="i-web"></i>
+                	<p class="tit">Web前端攻城狮</p>
+                	<p class="desc">互联网时代最火爆的技术</p>
+            	</a>
+			</div>
+	
+
+
+
+<!--
+			<div class="g-banner-content">
+				<div class="g-banner-box">
+					<a target="_blank" href="#" data-track="banner-1-1" class="click-help">
+						<div class="banner-slide" data-url="http://img.imooc.com/59cb86aa0001844c09360316.jpg" style="display: none;">
+							<img src="http://img.imooc.com/59cb86aa0001844c09360316.jpg">
+						</div>
+					</a>
+					<a target="_blank" href="#" data-track="banner-1-2" class="click-help">
+						<div class="banner-slide" data-url="http://img.imooc.com/59cb0bfc00011c9609360316.jpg" style="display: none;"><img src="http://img.imooc.com/59cb0bfc00011c9609360316.jpg"></div>
+					</a>
+					<a target="_blank" href="#" data-track="banner-1-3" class="click-help">
+						<div class="banner-slide" data-url="http://img.imooc.com/59c470e2000192d709360316.jpg" style="display: none;"><img src="http://img.imooc.com/59c470e2000192d709360316.jpg"></div>
+					</a>
+					<a target="_blank" href="#" data-track="banner-1-4" class="click-help">
+						<div class="banner-slide" data-url="http://img.imooc.com/599eb4be0001e71b09360316.jpg" style="display: none;"><img src="http://img.imooc.com/599eb4be0001e71b09360316.jpg"></div>
+					</a>
+					<a target="_blank" href="#" data-track="banner-1-5" class="click-help">
+						<div class="banner-slide" data-url="http://img.imooc.com/59ccae9b00011e8609360316.jpg" style="display: none;"><img src="http://img.imooc.com/59ccae9b00011e8609360316.jpg"></div>
+					</a>
+					
+					<div class="banner-dots"><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="active"></span></div>
+					<a href="#" class="banner-anchor prev icon-left2"></a>
+					<a href="#" class="banner-anchor next icon-right2"></a>
+					<div class="cb"></div>
+			</div>
+		
+			<div class="path-banner clearfix">
+					<a href="#" target="_blank" data-track="ljtj-1-3">
+                <i class="i-java"></i>
+                <p class="tit">Java攻城狮</p>
+                <p class="desc">健壮、安全、适用广泛</p>
+            </a>
+					<a href="#" target="_blank" data-track="ljtj-1-4">
+                <i class="i-android"></i>
+                <p class="tit">Android攻城狮</p>
+                <p class="desc">移动设备市场份额第一</p>
+            </a>
+					<a href="#" target="_blank" data-track="ljtj-1-2">
+                <i class="i-php"></i>
+                <p class="tit">PHP攻城狮</p>
+                <p class="desc">世界上最好的语言：）</p>
+            </a>
+					<a href="#" target="_blank" data-track="ljtj-1-5">
+                <i class="i-ios"></i>
+                <p class="tit">iOS攻城狮</p>
+                <p class="desc">可能是全球最好用的系统</p>
+            </a>
+				</div>
+			</div>
+-->
+		</div>
+	</section>
 	<!--实战推荐-->
-	<section>
+	<section id="Shizhan">
 		<div class="container-types clearfix">
 			<h3 class="types-title">
-				<span class="tit-icon icon-shizhan-l tit-icon-l"></span><em>实</em>／<em>战</em>／<em>推</em>／<em>荐</em><span class="tit-icon icon-shizhan-r tit-icon-r"></span>
+				<span class="title-icon icon-l"></span><em>实</em>／<em>战</em>／<em>推</em>／<em>荐</em><span class="title-icon icon-r"></span>
 			</h3>
 			<div class="clearfix types-content">
-				<div class="course-card-container">
-					<a target="_blank" class="course-card" href="#">
-						<div class="course-stat new">
-						NEW
+				<div class="course-card-container" v-for="course in courses">
+					<a target="_blank" class="course-card" :href="course.href">
+						<div class="course-stat new" v-if=course.new>
+							NEW
+						</div>
+						<div class="course-stat hot" v-if=course.hot>
+							HOT
 						</div>
 						<div class="course-card-top">
-							<img class="course-banner" src="img/course.jpg">
+							<img class="course-banner" :src='"img/"+course.img'>
 							<div class="course-label">
-								<label>Python</label>
-								<label>Java</label>
+								<label v-for="label in course.label">{{label}}</label>
 							</div>
 						</div>
 						<div class="course-card-content">
-							<h3>Python3入门与进阶</h3>
+							<h3>{{course.content}}</h3>
 							<div class="clearfix course-card-bottom">
 								<div class="course-card-info">
-									<span>实战</span>
-									<span>初级</span>
-									<span><i class="fa fa-user-o"></i>385</span>
-								<span class="course-star-box">
+									<span v-for="info in course.info">{{info}}</span>
+									<span><i class="fa fa-user-o"></i>{{course.users}}</span>
+									<span class="course-star-box">
 								<i class="fa fa-star on"></i>
 								<i class="fa fa-star on"></i>
 								<i class="fa fa-star on"></i>
@@ -87,28 +171,42 @@
 								<i class="fa fa-star on"></i>
 								</span>
 								</div>
-								<div class="course-card-price">￥366.00</div>
+								<div :class='course.free?"course-card-price free":"course-card-price"'>{{course.free?'免费':course.price}}</div>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="course-card-container">
-					<a target="_blank" class="course-card" href="#">
-						<div class="course-card-top hashadow">
-							<img class="course-banner" src="img/course.jpg">
+			</div>
+		</div>
+	</section>
+	<!--新上好课-->
+	<section id="Xinshang">
+		<div class="container-types clearfix">
+			<h3 class="types-title">
+				<span class="title-icon icon-l"></span><em>新</em>／<em>上</em>／<em>好</em>／<em>课</em><span class="title-icon icon-r"></span>
+			</h3>
+			<div class="clearfix types-content">
+				<div class="course-card-container" v-for="course in courses">
+					<a target="_blank" class="course-card" :href="course.href">
+						<div class="course-stat new" v-if=course.new>
+							NEW
+						</div>
+						<div class="course-stat hot" v-if=course.hot>
+							HOT
+						</div>
+						<div class="course-card-top">
+							<img class="course-banner" :src='"img/"+course.img'>
 							<div class="course-label">
-								<label>Python</label>
-								<label>Java</label>
+								<label v-for="label in course.label">{{label}}</label>
 							</div>
 						</div>
 						<div class="course-card-content">
-							<h3>Python3入门与进阶</h3>
+							<h3>{{course.content}}</h3>
 							<div class="clearfix course-card-bottom">
 								<div class="course-card-info">
-									<span>实战</span>
-									<span>初级</span>
-									<span><i class="fa fa-user-o"></i>385</span>
-								<span class="course-star-box">
+									<span v-for="info in course.info">{{info}}</span>
+									<span><i class="fa fa-user-o"></i>{{course.users}}</span>
+									<span class="course-star-box">
 								<i class="fa fa-star on"></i>
 								<i class="fa fa-star on"></i>
 								<i class="fa fa-star on"></i>
@@ -116,137 +214,57 @@
 								<i class="fa fa-star on"></i>
 								</span>
 								</div>
-								<div class="course-card-price">￥366.00</div>
+								<div :class='course.free?"course-card-price free":"course-card-price"'>{{course.free?'免费':course.price}}</div>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="course-card-container">
-					<a target="_blank" class="course-card" href="#">
-						<div class="course-stat hot">
-						HOT
-						</div>
-						<div class="course-card-top hashadow">
-							<img class="course-banner" src="img/course.jpg">
-							<div class="course-label">
-								<label>Python</label>
-								<label>Java</label>
-							</div>
-						</div>
-						<div class="course-card-content">
-							<h3>Python3入门与进阶</h3>
-							<div class="clearfix course-card-bottom">
-								<div class="course-card-info">
-									<span>实战</span>
-									<span>初级</span>
-									<span><i class="fa fa-user-o"></i>385</span>
-								<span class="course-star-box">
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								</span>
-								</div>
-								<div class="course-card-price">￥366.00</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="course-card-container">
-					<a target="_blank" class="course-card" href="#">
-						<div class="course-card-top hashadow">
-							<img class="course-banner" src="img/course.jpg">
-							<div class="course-label">
-								<label>Python</label>
-								<label>Java</label>
-							</div>
-						</div>
-						<div class="course-card-content">
-							<h3>Python3入门与进阶</h3>
-							<div class="clearfix course-card-bottom">
-								<div class="course-card-info">
-									<span>实战</span>
-									<span>初级</span>
-									<span><i class="fa fa-user-o"></i>385</span>
-								<span class="course-star-box">
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								</span>
-								</div>
-								<div class="course-card-price">￥366.00</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="course-card-container">
-					<a target="_blank" class="course-card" href="#">
-						<div class="course-card-top hashadow">
-							<img class="course-banner" src="img/course.jpg">
-							<div class="course-label">
-								<label>Python</label>
-								<label>Java</label>
-							</div>
-						</div>
-						<div class="course-card-content">
-							<h3>Python3入门与进阶</h3>
-							<div class="clearfix course-card-bottom">
-								<div class="course-card-info">
-									<span>实战</span>
-									<span>初级</span>
-									<span><i class="fa fa-user-o"></i>385</span>
-								<span class="course-star-box">
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								</span>
-								</div>
-								<div class="course-card-price">￥366.00</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="course-card-container">
-					<a target="_blank" class="course-card" href="#">
-						
-						<div class="course-card-top hashadow">
-							<img class="course-banner" src="img/course.jpg">
-							<div class="course-label">
-								<label>Python</label>
-								<label>Java</label>
-							</div>
-						</div>
-						<div class="course-card-content">
-							<h3>Python3入门与进阶</h3>
-							<div class="clearfix course-card-bottom">
-								<div class="course-card-info">
-									<span>实战</span>
-									<span>初级</span>
-									<span><i class="fa fa-user-o"></i>385</span>
-								<span class="course-star-box">
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								<i class="fa fa-star on"></i>
-								</span>
-								</div>
-								<div class="course-card-price">￥366.00</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				
 			</div>
 		</div>
 	</section>
 	<!--新手入门-->
-	<section></section>
+	<section id="Xinshou">
+		<div class="container-types clearfix">
+			<h3 class="types-title">
+				<span class="title-icon icon-l"></span><em>新</em>／<em>手</em>／<em>入</em>／<em>门</em><span class="title-icon icon-r"></span>
+			</h3>
+			<div class="clearfix types-content">
+				<div class="course-card-container" v-for="course in courses">
+					<a target="_blank" class="course-card" :href="course.href">
+						<div class="course-stat new" v-if=course.new>
+							NEW
+						</div>
+						<div class="course-stat hot" v-if=course.hot>
+							HOT
+						</div>
+						<div class="course-card-top">
+							<img class="course-banner" :src='"img/"+course.img'>
+							<div class="course-label">
+								<label v-for="label in course.label">{{label}}</label>
+							</div>
+						</div>
+						<div class="course-card-content">
+							<h3>{{course.content}}</h3>
+							<div class="clearfix course-card-bottom">
+								<div class="course-card-info">
+									<span v-for="info in course.info">{{info}}</span>
+									<span><i class="fa fa-user-o"></i>{{course.users}}</span>
+									<span class="course-star-box">
+								<i class="fa fa-star on"></i>
+								<i class="fa fa-star on"></i>
+								<i class="fa fa-star on"></i>
+								<i class="fa fa-star on"></i>
+								<i class="fa fa-star on"></i>
+								</span>
+								</div>
+								<div :class='course.free?"course-card-price free":"course-card-price"'>{{course.free?'免费':course.price}}</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!--技能提升-->
 	<section></section>
 	<!--前沿技术-->
@@ -262,7 +280,8 @@
 </body>
 
 <script src="js/jquery.js"></script>
-<script src="js/main.js"></script>
 <script src="js/vue.js"></script>
+<script src="js/content-vue.js"></script>
+<script src="js/main.js"></script>
 
 </html>

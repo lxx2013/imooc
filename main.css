@@ -31,12 +31,12 @@ header {
 	z-index: 10;
 	background: white;
 	height: 72px;
-	box-shadow: 0 0px 200px 60px rgba(152, 49, 218, 0.2);
-	/*	阴影很重要！*/
+	box-shadow: 0 3px 3px 0px #ccc;
 }
 
 section {
 	z-index: 1;
+	position: relative;
 	min-height: 400px;
 }
 
@@ -172,8 +172,9 @@ header li {
 	position: relative;
 	padding: 0 15px;
 }
-#app-load a:hover+div{
+#app-load:hover>div{
 	display: block;
+	z-index: 100;
 }
 #app-load{
 	position: relative;
@@ -181,10 +182,11 @@ header li {
 #app-load div{
 	display: none;
 	position: absolute;
+	z-index: 100;
 	height: 150px;
 	width: 300px;
 	right: 0;
-	top:54px;
+	top:72px;
 	background: white;
 	box-shadow: 0 5px 10px 0 #ccc;
 	border-radius: 5px;
@@ -202,11 +204,26 @@ header li {
 #shop-card a:hover{
 	background: #f8fafc;
 }
+#shop-card:hover div{
+	display: block;
+}
 #shop-card span{
 	position: relative;
 	display: block;
 	height:0;
 	width: 0;
+}
+#shop-card div{
+	display: none;
+	position: absolute;
+	z-index: 23;
+	width: 340px;
+	height: 410px;
+	top:53px;
+	right:0;
+	background: url(img/shop-card.png) no-repeat;
+	box-shadow: 0 5px 10px 0 #ccc;
+	border-radius: 5px;
 }
 #shop-card span:before{
 	content: '\f07a';
@@ -217,6 +234,38 @@ header li {
 }
 
 /*主要课程模块*/
+/*icon位置偏移集合*/
+#Shizhan .icon-l{
+	background-position: center 0;
+}
+#Shinzhan .icon-r{
+	background-position: center -36px;
+}
+#Xinshang .icon-l{
+	background-position: center -72px;
+}
+#Xinshang .icon-r{
+	background-position: center -108px;
+}
+#Xinshou .icon-l{
+	background-position: center -144px;
+}
+#Xinshou .icon-r{
+	background-position: center -180px;
+}
+#Jineng .icon-l{
+	background-position: center -216px;
+}
+#Jineng .icon-r{
+	background-position: center -252px;
+}
+#Qianyan .icon-l{
+	background-position: center -288px;
+}
+#Qianyan .icon-r{
+	background-position: center -324px;
+}
+/***************/
 .container-types{
 	width: 1152px;
 	margin: 0 auto;
@@ -229,6 +278,22 @@ header li {
     letter-spacing: .6px;
     line-height: 36px;
     text-align: center;
+}
+.container-types .types-title em {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4D555D;
+    margin: 0 3px;
+	font-style:normal;
+}
+.container-types .types-title .title-icon{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 56px;
+    height: 36px;
+	margin: 0 24px;
+	background: url(img/icon.png) no-repeat;
+    background-size: 100%;
 }
 .container-types .types-content {
     margin-top: 24px;
@@ -251,6 +316,9 @@ header li {
     position: relative;
     border-radius: 8px;
     transition: all .3s;
+}
+.course-card-container:hover .course-card-top{
+    box-shadow: 0 8px 16px 0 rgba(7,17,27,.1);
 }
 .course-label {
     position: absolute;
@@ -283,6 +351,9 @@ header li {
     max-height: 44px;
     transition: all .3s;
 }
+.course-card-container:hover h3 {
+    color: #F01414!important;
+}
 .course-card-info {
     font-size: 12px;
     color: #93999F;
@@ -310,6 +381,9 @@ header li {
     line-height: 20px;
     margin-top: 8px;
 }
+.course-card-price.free {
+    color: #F01414!important;
+}
 .course-card-container .course-stat {
     position: absolute;
     border: 2px solid #FFF;
@@ -328,4 +402,101 @@ header li {
 }
 .course-card-container .course-stat.hot {
     background-image: linear-gradient(-90deg,#ffcb7b 0,#ffa01a 100%);
+}
+/**********************/
+/************焦点图部分**/
+/********** ***********/
+#Jiaodian{
+	padding-top: 32px;
+	background: white;
+	box-shadow: none;
+	z-index: 2;
+}
+#Jiaodian .banner-top{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 150px;
+	width: 100%;
+	background-size: cover;
+	transition: all 0.3s;
+	filter: blur(100px);
+	-webkit-filter:blur(100px);
+	overflow: hidden;
+}
+
+#Jiaodian .banner {
+    background-color: #93999f;
+    box-shadow: 0 12px 24px 0 #ccc;
+    position: relative;
+	z-index: 20000;
+    height: 444px;
+    overflow: hidden;
+    width: 1152px;
+    margin: auto;
+	box-sizing: border-box;
+    border-radius: 8px;
+}
+.menu-left{
+	position: absolute;
+	background-color: #2b333b;
+	width: 216px;
+	height: 432px;
+	left: 0;
+	top:0;
+	padding-top: 12px;
+}
+.menu-left a{
+	display: block;
+	position: relative;
+	padding: 0 16px;
+	margin-left: 12px;
+    color: rgba(255,255,255,.6);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 60px;
+	line-height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .1s;
+}
+.menu-left a:after{
+	content: "\f105";
+	font-family: FontAwesome;
+	position: absolute;
+	top:0px;
+	right: 10px;
+}
+.menu-left a img{
+	display: none;
+	position: absolute;
+	left: 204px;
+	top:0;
+	width: 765px;
+	height: 444px;
+}
+.menu-left a:hover{
+	background-color:#6b7176;
+}
+.menu-left a:hover img{
+	display: block;
+	z-index: 22;
+}
+.menu-right{
+	position: absolute;
+	right: 0;
+	top:0;
+	width: 936px;
+	height: 316px;
+}
+.menu-bottom{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 936px;
+	height: 128px;
+	box-sizing: border-box;
+	padding: 0 18px;
+	background: blue;
 }
